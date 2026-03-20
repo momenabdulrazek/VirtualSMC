@@ -104,8 +104,7 @@ bool SMIMonitor::i8k_get_dell_sig_aux(int fn) {
 }
 
 bool SMIMonitor::i8k_get_dell_signature() {
-	return (i8k_get_dell_sig_aux(I8K_SMM_GET_DELL_SIG1) ||
-		    i8k_get_dell_sig_aux(I8K_SMM_GET_DELL_SIG2));
+	return true; // Bypass signature check 
 }
 
 /*
